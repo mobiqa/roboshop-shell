@@ -19,5 +19,5 @@ systemctl enable catalogue
 systemctl start catalogue
 
 cp ${script_location}/files/mongodb.repo /etc/yum.repos.d/mongo.repo
-yum install mongodb-org-shell-y
+yum install mongodb-org-shell -y
 
