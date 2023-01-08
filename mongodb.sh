@@ -17,6 +17,6 @@ print_head "Install MongoDB"
 systemctl enable mongod &>>${LOG}
 status_check
 
-print_head "Install MongoDB"
+print_head "start  MongoDB"
 systemctl restart mongod &>>${LOG}
 status_check
