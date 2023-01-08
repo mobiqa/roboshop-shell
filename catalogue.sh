@@ -27,7 +27,7 @@ print_head "Add Application User"
 
   print_head "Extracting App Content"
   cd /app
-  unzip /tmp/${component}.zip &>>${LOG}
+  unzip /tmp/catalogue.zip &>>${LOG}
   status_check
 
   print_head "Installing NodeJS Dependencies"
