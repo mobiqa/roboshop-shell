@@ -5,7 +5,7 @@ Description = user Service
 User=roboshop
 Environment=MONGO=true
 Environment=REDIS_HOST=redis-dev.mobiqa.online
-Environment=MONGO_URL="mongodb://mongodb-dev.mobiqa.online:27017/users"
+Environment=CATALOGUE_HOST=catalogue-dev.mobiqa.online
 ExecStart=/bin/node /app/server.js
 SyslogIdentifier=user
 
