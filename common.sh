@@ -82,7 +82,7 @@ then
   print_head "Load Schema"
   mongo --host mongodb-dev.mobiqa.online </app/schema/${component}.js
   status_check
-fi 
+fi
 
 
 
