@@ -73,5 +73,5 @@ systemctl restart mongod &>>${LOG}
 status_check
 
 print_head "Load Schema"
-      mongo --host mongodb-dev.mobiqa.online </app/schema/$catalogue.js &>>${LOG}
+      mongo --host mongodb-dev.mobiqa.online </app/schema/catalogue.js &>>${LOG}
       status_check
