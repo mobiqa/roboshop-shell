@@ -147,11 +147,9 @@ print_head "Install PYTHON"
   pip3.6 install -r requirements.txt &>>${LOG}
   status_check
 
-  print_head "Update passwords in Service File"
-      
-    sed -i -e "s/roboshop_rabbitmq_password/${roboshop_rabbitmq_password}" ${script_location}files/${component}.service &>>${LOG}
-    status_check
-  SYSTEMD_SETUP
+  print_head "Update Passwords in Service File"
+  sed -i -e "s/roboshop_rabbitmq_password/${roboshop_rabbitmq_password}/" ${script_location}/files/${component}.service  &>>${LOG}
+  status_check  SYSTEMD_SETUP
 
 }
 
