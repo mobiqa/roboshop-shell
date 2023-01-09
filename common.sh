@@ -149,7 +149,7 @@ print_head "Install PYTHON"
 
   print_head "Update passwords in Service File"
       cd /app
-    sed -i -e "s/roboshop_rabbitmq_password/${roboshop_rabbitmq_password}" files/${component}.service &>>${LOG}
+    sed -i -e "s/roboshop_rabbitmq_password/${roboshop_rabbitmq_password}" ${script_location}files/${component}.service &>>${LOG}
     status_check
   SYSTEMD_SETUP
 
