@@ -34,7 +34,7 @@ if [ $? -ne 0 ]; then
   fi
 status_check
 
-print_head "Add permission to Application user"
+print_head "Add tags to Application user"
 rabbitmqctl set_user_tags roboshop administrator &>>${LOG}
 status_check
 
