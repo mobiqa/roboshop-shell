@@ -156,9 +156,9 @@ print_head "Install PYTHON"
 }
 
 GOLANG()
-
 {
-print_head "Install GOLANG"
+
+ print_head "Install GOLANG"
   yum install golang -y &>>${LOG}
   status_check
 
