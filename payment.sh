@@ -1,6 +1,6 @@
 source common.sh
 
-component=catalogue
+component=payment
 schema_load=false
 
 if [ -z "${roboshop_rabbitmq_password}" ]; then

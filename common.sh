@@ -134,13 +134,13 @@ MAVEN() {
 }
 
 PYTHON
+
 {
 print_head "Install PYTHON"
   yum install python36 gcc python3-devel -y &>>${LOG}
   status_check
 
   APP_PREREQ
-
 
   print_head "Download Dependencies"
     cd /app
@@ -151,11 +151,7 @@ print_head "Install PYTHON"
       cd /app
     sed -i -e "s/roboshop_rabbitmq_password/${roboshop_rabbitmq_password}" files/${component}.service &>>${LOG}
     status_check
-
-
   SYSTEMD_SETUP
-
-
 
 }
 
