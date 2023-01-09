@@ -133,7 +133,7 @@ MAVEN() {
 
 }
 
-PYTHON
+PYTHON()
 
 {
 print_head "Install PYTHON"
