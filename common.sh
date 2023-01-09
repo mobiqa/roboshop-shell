@@ -155,4 +155,33 @@ print_head "Install PYTHON"
 
 }
 
+GOLANG()
+
+{
+print_head "Install GOLANG"
+  yum install golang -y &>>${LOG}
+  status_check
+
+  APP_PREREQ
+
+  print_head "Download Dependencies"
+    cd /app
+  go mod init dispatch  &>>${LOG}
+  status_check
+
+  print_head "Get the Dependencies"
+     go get &>>${LOG}
+    status_check
+
+    print_head "Build the Dependencies"
+      go build &>>${LOG}
+      status_check
+
+  print_head "Update Passwords in Service File"
+  sed -i -e "s/roboshop_rabbitmq_password/${roboshop_rabbitmq_password}/" ${script_location}/files/${component}.service  &>>${LOG}
+  status_check
+
+    SYSTEMD_SETUP
+
+}
 
