@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##### Change these values ###
-ZONE_ID="Z0934381CQX5MPL9K2ZM"
+ZONE_ID="Z02185542VEK92PFPWW3V"
 DOMAIN="mobiqa.online"
 SG_NAME="allow-all"
 env=dev
