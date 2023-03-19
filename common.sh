@@ -42,7 +42,7 @@ APP_PREREQ() {
 }
 
 SYSTEMD_SETUP() {
-  print_head "Configuring ${component} Service File"
+    print_head "Configuring ${component} Service File"
   cp ${script_location}/files/${component}.service /etc/systemd/system/${component}.service &>>${LOG}
   status_check
 
