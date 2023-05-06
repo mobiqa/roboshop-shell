@@ -48,7 +48,7 @@ fi
 #  create_ec2
 #done
 
-for component in catalogue frontend mongodb; do
+for component in cart user shipping payment mysql rabbitmq redis; do
   COMPONENT="${component}-${env}"
   create_ec2
 done
